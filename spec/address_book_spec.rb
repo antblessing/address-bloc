@@ -13,6 +13,7 @@ RSpec.describe AddressBook do
       it "should delete all previous entries" do
         book.add_entry('Ada Lovelace', '010.012.1815', 'augusta.king@lovelace.com')
         book.add_entry('Bill', '555-555-4854', 'bill@blocmail.com')
+        book.add_entry('Sussie', '555-555-2036', 'sussie@blocmail.com')
         book.exterminate
         expect(book.entries.size). to eq(0)
       end
