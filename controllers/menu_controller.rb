@@ -15,6 +15,7 @@
      puts "3 - Search for an entry"
      puts "4 - Import entries from a CSV"
      puts "5 - Exit"
+     puts "6 - Super Extermination"
      print "Enter your selection: "
  
  # #3
@@ -38,6 +39,10 @@
        main_menu
      when 5
        puts "Good-bye!"
+     when 6
+       @address_book.exterminate
+       puts "Hope you have that info saved!"
+       main_menu
  # #8
        exit(0)
  # #9
@@ -59,7 +64,7 @@
      system "clear"
      puts "End of entries"
    end
- 
+   
    def create_entry
      system "clear"
      puts "new AdrressBloc Entry"
@@ -79,6 +84,7 @@
  
    def read_csv
    end
+   
    
    def entry_submenu(entry)
  # #16
